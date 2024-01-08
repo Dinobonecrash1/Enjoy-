@@ -117,11 +117,7 @@ async def dl_link(event):
 
 async def encod(event):
     try:
-        if (
-            str(event.sender_id) not in OWNER and
-            str(event.sender_id) not in AUTH_GROUP and
-            event.sender_id != DEV
-        ):
+        if (event.sender_id != AUTH_GROUP and (str(event.sender_id) != OWNER or event.sender_id not in DEV)):
             return await event.reply("**Sorry, You're not an Authorized User!**")
         if not event.media:
             return
