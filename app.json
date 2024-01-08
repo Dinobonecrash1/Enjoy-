@@ -23,6 +23,10 @@
             "description": "Put ids of user which can access the bot e.g 123456789",
             "value": ""
         },
+        "AUTH_GROUP": {
+            "description": "Put ids of user which can access the bot IN GROUP e.g 123456789",
+            "value": ""
+        },
         "THUMBNAIL": {
             "description": "Put Link of any picture.",
             "value": "https://telegra.ph/file/f9e5d783542906418412d.jpg",
