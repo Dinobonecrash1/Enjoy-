@@ -157,7 +157,7 @@ async def something():
     for i in itertools.count():
         try:
             if not WORKING and QUEUE:
-                user = int(OWNER.split()[0])
+                user = int(AUTH_GROUP.split()[0])
                 e = await bot.send_message(user, "**📥 Downloading Queue Files...**")
                 s = dt.now()
                 try:
