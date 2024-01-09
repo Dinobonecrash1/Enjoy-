@@ -137,7 +137,7 @@ async def _(e):
 
 ########## AUTO ###########
 
-@bot.on(events.NewMessage(incoming=True))
+@bot.on(events.NewMessage(incoming=false))
 async def _(event):
         if event.chat_id not in AUTH_GROUP and event.sender_id != DEV:
             return await event.reply("**Sorry You're not An Authorised User!**")
