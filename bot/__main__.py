@@ -139,7 +139,7 @@ async def _(e):
 
 @bot.on(events.NewMessage(incoming=True))
 async def _(event):
-        if event.chat_id != AUTH_GROUP and event.sender_id != DEV:
+        if event.chat_id not in AUTH_GROUP and event.sender_id != DEV:
             return await event.reply("**Sorry You're not An Authorised User!**")
         if not event.photo:
             return
